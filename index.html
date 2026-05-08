@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Authentic Japanese restaurant — fresh ingredients, traditional recipes, and a passion for great food." />
+  <link rel="icon" href="data:,">
+  <title>JAPAN HAUS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-dark': '#1a1a1a',
+            'brand-cream': '#f5f0e8',
+            'brand-orange': '#e07b39',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-brand-dark text-brand-cream font-sans">
+
+  <header class="bg-brand-dark sticky top-0 z-50 border-b border-gray-800">
+  <nav aria-label="Main" class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="index.html" class="text-brand-cream font-bold text-xl tracking-widest uppercase">Japan Haus</a>
+    <!-- Desktop nav -->
+    <ul class="hidden md:flex gap-8 text-sm font-medium">
+      <li><a href="index.html" class="text-brand-orange" aria-current="page">Home</a></li>
+      <li><a href="menu.html" class="text-brand-cream hover:text-brand-orange transition-colors">Menu</a></li>
+      <li><a href="contact.html" class="text-brand-cream hover:text-brand-orange transition-colors">Kontakt</a></li>
+      <!-- <li><a href="reservations.html" class="text-brand-cream hover:text-brand-orange transition-colors">Reservations</a></li> -->
+      <!-- <li><a href="order.html" class="bg-brand-orange text-white px-4 py-2 rounded-sm hover:opacity-90 transition-opacity">Order Online</a></li> -->
+    </ul>
+    <!-- Mobile hamburger -->
+    <button id="nav-toggle" class="md:hidden text-brand-cream" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </nav>
+  <!-- Mobile dropdown -->
+  <nav id="mobile-menu" class="hidden md:hidden bg-brand-dark border-t border-gray-800 px-6 pb-4" aria-label="Mobile navigation">
+    <ul class="flex flex-col gap-3 pt-3 text-sm font-medium">
+      <li><a href="index.html" class="block text-brand-orange" aria-current="page">Home</a></li>
+      <li><a href="menu.html" class="block text-brand-cream hover:text-brand-orange">Menu</a></li>
+      <li><a href="contact.html" class="block text-brand-cream hover:text-brand-orange">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+  <!-- Hero -->
+  <section aria-labelledby="hero-heading" class="max-w-6xl mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center gap-10">
+    <div class="flex-1">
+      <p class="text-brand-orange uppercase tracking-widest text-sm mb-4">JAPAN HAUS Original Japanese Wagyu & Crêperie</p>
+      <h1 id="hero-heading" class="text-4xl md:text-5xl font-bold text-brand-cream leading-tight mb-6">
+        Im Japan Haus dreht sich alles um die Leidenschaft für japanische Küche.
+      </h1>
+      <p class="text-brand-cream/70 mb-8 text-lg">
+        Wir lieben, was wir tun und möchten dir mit jeder Speise ein einzigartiges Erlebnis bereiten.
+      </p>
+      <a href="menu.html" class="inline-block bg-brand-orange text-white font-semibold px-8 py-3 rounded-sm hover:opacity-90 transition-opacity">
+      Menu
+      </a>
+    </div>
+    <div class="flex-1 w-full aspect-video">
+      <img
+        src="C:\Users\alexg\OneDrive\Images\Screenshots\Screenshot 2026-05-03 223344.png"
+        alt="Sushi platter"
+        class="w-full h-full rounded-lg object-cover"
+      />
+    </div>
+  </section>
+
+  <!-- Secondary section -->
+  <section aria-labelledby="secondary-heading" class="bg-brand-cream text-brand-dark py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
+      <div class="flex-1 aspect-video">
+        <img
+          src="C:\Users\alexg\OneDrive\Images\Screenshots\Screenshot 2026-05-03 225154.png"
+          alt="Sushi rolls"
+          class="w-full h-full rounded-lg object-cover"
+        />
+      </div>
+      <div class="flex-1">
+        <h2 id="secondary-heading" class="text-3xl md:text-4xl font-bold mb-4">Japanischer Genuss auf höchstem Niveau</h2>
+        <p class="text-brand-dark/70 mb-6 text-lg leading-relaxed">
+          JAPAN HAUS bringt authentischen japanischen Genuss auf den Tisch, wenn du bereit bist für ein besonderes kulinarisches
+          Erlebnis, erwartet dich hier eine perfekte Kombination aus Qualität, Präzision und japanischer Kochkunst.
+        </p>
+        <a href="#" class="text-brand-orange font-semibold hover:underline"><span aria-hidden="true"></span></a>
+      </div>
+    </div>
+  </section>
+</main>
+<div style="margin-bottom: 80px;"></div>
+<script defer async src='https://cdn.trustindex.io/loader.js?719067d712f10996d3161720ba3'></script>
+
+  <footer class="bg-brand-dark border-t border-gray-800 py-10 px-6 text-center text-sm">
+  <p class="font-semibold text-brand-cream text-base mb-1">JAPAN HAUS Original Japanese Wagyu & Crêperie</p>
+  <p class="text-brand-cream/60">Stuntzstraße 32 · München</p>
+  <p class="text-brand-cream/60">+49 175 8415155</p>
+  <div class="flex justify-center gap-6 mt-4 text-brand-cream/60">
+    <a href="https://www.instagram.com/japan_haus/" class="hover:text-brand-orange transition-colors">Instagram</a>
+    <a href="#" class="hover:text-brand-orange transition-colors"></a>
+  </div>
+  <p class="mt-6 text-brand-cream/40">&copy; 2026 JAPAN HAUS. All rights reserved.</p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Find us, check our opening hours, and get in touch with the restaurant." />
+  <link rel="icon" href="data:,">
+  <title>Contact — Sushi Restaurant</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-dark': '#1a1a1a',
+            'brand-cream': '#f5f0e8',
+            'brand-orange': '#e07b39',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-brand-dark text-brand-cream font-sans">
+
+  <header class="bg-brand-dark sticky top-0 z-50 border-b border-gray-800">
+  <nav aria-label="Main" class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="index.html" class="text-brand-cream font-bold text-xl tracking-widest uppercase">Japan Haus</a>
+    <!-- Desktop nav -->
+    <ul class="hidden md:flex gap-8 text-sm font-medium">
+      <li><a href="index.html" class="text-brand-cream hover:text-brand-orange transition-colors">Home</a></li>
+      <li><a href="menu.html" class="text-brand-cream hover:text-brand-orange transition-colors">Menu</a></li>
+      <li><a href="contact.html" class="text-brand-orange" aria-current="page">Kontakt</a></li>
+      <!-- <li><a href="reservations.html" class="text-brand-cream hover:text-brand-orange transition-colors">Reservations</a></li> -->
+      <!-- <li><a href="order.html" class="bg-brand-orange text-white px-4 py-2 rounded-sm hover:opacity-90 transition-opacity">Order Online</a></li> -->
+    </ul>
+    <!-- Mobile hamburger -->
+    <button id="nav-toggle" class="md:hidden text-brand-cream" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </nav>
+  <!-- Mobile dropdown -->
+  <nav id="mobile-menu" class="hidden md:hidden bg-brand-dark border-t border-gray-800 px-6 pb-4" aria-label="Mobile navigation">
+    <ul class="flex flex-col gap-3 pt-3 text-sm font-medium">
+      <li><a href="index.html" class="block text-brand-cream hover:text-brand-orange">Home</a></li>
+      <li><a href="menu.html" class="block text-brand-cream hover:text-brand-orange">Menu</a></li>
+      <li><a href="contact.html" class="block text-brand-orange" aria-current="page">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main class="max-w-6xl mx-auto px-6 py-16">
+  <h1 class="text-3xl font-bold text-brand-cream mb-10 text-center">Kontakt &amp; Öffnungszeiten</h1>
+
+  <div class="flex flex-col md:flex-row gap-10">
+
+    <!-- Left: info + hours -->
+    <div class="flex-1 space-y-10">
+
+      <div>
+        <h2 class="text-brand-orange font-semibold uppercase tracking-widest text-sm mb-4">Finde Uns Hier</h2>
+        <p class="text-brand-cream/80 mb-2">Stuntzstraße 32 · München</p>
+        <p class="text-brand-cream/80 mb-2">
+          <a href="tel:+000000000" class="hover:text-brand-orange transition-colors">+49 175 8415155</a>
+        </p>
+        <p class="text-brand-cream/80">
+          <a href="mailto:info@sushirestaurant.com" class="hover:text-brand-orange transition-colors"></a>
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-brand-orange font-semibold uppercase tracking-widest text-sm mb-4">Öffnungszeiten</h2>
+        <table class="w-full text-sm">
+          <thead class="sr-only">
+            <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Hours</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-gray-800">
+              <th scope="row" class="py-2 pr-8 font-medium text-brand-cream text-left">Montag – Mittwoch</th>
+              <td class="py-2 text-brand-cream/70">Geschlossen</td>
+            </tr>
+            <tr class="border-b border-gray-800">
+              <th scope="row" class="py-2 pr-8 font-medium text-brand-cream text-left">Donnerstag</th>
+              <td class="py-2 text-brand-cream/70">12:00 – 18:00</td>
+            </tr>
+            <tr>
+              <th scope="row" class="py-2 pr-8 font-medium text-brand-cream text-left">Freitag - Samstag</th>
+              <td class="py-2 text-brand-cream/70">12:00 – 20:00</td>
+            </tr>
+            <tr>
+              <th scope="row" class="py-2 pr-8 font-medium text-brand-cream text-left">Sonntag</th>
+              <td class="py-2 text-brand-cream/70">12:00 – 14:30</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+    <!-- Right: Google Map -->
+    <div class="flex-1 rounded-lg overflow-hidden h-96 md:h-auto md:min-h-[500px]">
+      <!--
+        Replace the src below with your actual Google Maps embed URL.
+        Go to Google Maps → find your location → Share → Embed a map → copy the iframe src.
+      -->
+      <iframe
+        src="https://www.google.com/maps?q=Stuntzstraße+32,+81677+München&output=embed"
+        width="100%"
+        height="100%"
+        class="w-full h-full"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms"
+        title="Restaurant location"
+      ></iframe>
+    </div>
+
+  </div>
+</main>
+
+  <footer class="bg-brand-dark border-t border-gray-800 py-10 px-6 text-center text-sm">
+  <p class="font-semibold text-brand-cream text-base mb-1">JAPAN HAUS Original Japanese Wagyu & Crêperie</p>
+  <p class="text-brand-cream/60">Stuntzstraße 32 · München</p>
+  <p class="text-brand-cream/60">+49 175 8415155</p>
+  <div class="flex justify-center gap-6 mt-4 text-brand-cream/60">
+    <a href="https://www.instagram.com/japan_haus/" class="hover:text-brand-orange transition-colors">Instagram</a>
+    <a href="#" class="hover:text-brand-orange transition-colors"></a>
+  </div>
+  <p class="mt-6 text-brand-cream/40">&copy; 2026 JAPAN HAUS. All rights reserved.</p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse our full menu of fresh sushi, maki rolls, appetisers, and desserts." />
+  <link rel="icon" href="data:,">
+  <title>Menu — Sushi Restaurant</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'brand-dark': '#1a1a1a',
+            'brand-cream': '#f5f0e8',
+            'brand-orange': '#e07b39',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-brand-dark text-brand-cream font-sans">
+
+  <header class="bg-brand-dark sticky top-0 z-50 border-b border-gray-800">
+  <nav aria-label="Main" class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="index.html" class="text-brand-cream font-bold text-xl tracking-widest uppercase">Japan Haus</a>
+    <!-- Desktop nav -->
+    <ul class="hidden md:flex gap-8 text-sm font-medium">
+      <li><a href="index.html" class="text-brand-cream hover:text-brand-orange transition-colors">Home</a></li>
+      <li><a href="menu.html" class="text-brand-orange" aria-current="page">Menu</a></li>
+      <li><a href="contact.html" class="text-brand-cream hover:text-brand-orange transition-colors">Kontakt</a></li>
+      <!-- <li><a href="reservations.html" class="text-brand-cream hover:text-brand-orange transition-colors">Reservations</a></li> -->
+      <!-- <li><a href="order.html" class="bg-brand-orange text-white px-4 py-2 rounded-sm hover:opacity-90 transition-opacity">Order Online</a></li> -->
+    </ul>
+    <!-- Mobile hamburger -->
+    <button id="nav-toggle" class="md:hidden text-brand-cream" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </nav>
+  <!-- Mobile dropdown -->
+  <nav id="mobile-menu" class="hidden md:hidden bg-brand-dark border-t border-gray-800 px-6 pb-4" aria-label="Mobile navigation">
+    <ul class="flex flex-col gap-3 pt-3 text-sm font-medium">
+      <li><a href="index.html" class="block text-brand-cream hover:text-brand-orange">Home</a></li>
+      <li><a href="menu.html" class="block text-brand-orange" aria-current="page">Menu</a></li>
+      <li><a href="contact.html" class="block text-brand-cream hover:text-brand-orange">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main class="max-w-6xl mx-auto px-6 py-16">
+  <h1 class="text-3xl font-bold text-brand-cream mb-10 text-center">Unser Menu</h1>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <div class="bg-gray-900 rounded-lg overflow-hidden">
+      <img src="C:\Users\alexg\OneDrive\Images\Screenshots\Screenshot 2026-05-04 145144.png" alt="Wagyu Don" class="w-full aspect-[4/3] object-cover" />
+      <div class="p-4">
+        <h3 class="text-brand-cream font-semibold">Wagyu Don</h3>
+        <p class="text-brand-orange font-bold mt-1">€22.00</p>
+      </div>
+    </div>
+
+    <div class="bg-gray-900 rounded-lg overflow-hidden">
+      <img src="C:\Users\alexg\OneDrive\Images\Screenshots\Screenshot 2026-05-04 145154.png" alt="Ebi Tempura Don" class="w-full aspect-[4/3] object-cover" />
+      <div class="p-4">
+        <h3 class="text-brand-cream font-semibold">Ebi Tempura Don</h3>
+        <p class="text-brand-orange font-bold mt-1">€18.00</p>
+      </div>
+    </div>
+
+    <div class="bg-gray-900 rounded-lg overflow-hidden">
+      <img src="C:\Users\alexg\OneDrive\Images\Screenshots\Screenshot 2026-05-04 145206.png" alt="Wagyu Ebi Tempura Don" class="w-full aspect-[4/3] object-cover" />
+      <div class="p-4">
+        <h3 class="text-brand-cream font-semibold">Wagyu Ebi Tempura Don</h3>
+        <p class="text-brand-orange font-bold mt-1">€22.00</p>
+      </div>
+    </div>
+
+    <div class="bg-gray-900 rounded-lg overflow-hidden">
+      <img src="C:\Users\alexg\OneDrive\Images\Screenshots\Screenshot 2026-05-04 145216.png" alt="Tofu Wakame Udon" class="w-full aspect-[4/3] object-cover" />
+      <div class="p-4">
+        <h3 class="text-brand-cream font-semibold">Tofu Wakame Udon</h3>
+        <p class="text-brand-orange font-bold mt-1">€12.00</p>
+      </div>
+    </div>
+
+    <div class="bg-gray-900 rounded-lg overflow-hidden">
+      <img src="C:\Users\alexg\OneDrive\Images\Screenshots\Screenshot 2026-05-04 145231.png" alt="Wagyu Udon" class="w-full aspect-[4/3] object-cover" />
+      <div class="p-4">
+        <h3 class="text-brand-cream font-semibold">Wagyu Udon</h3>
+        <p class="text-brand-orange font-bold mt-1">€18.00</p>
+      </div>
+    </div>
+
+    <div class="bg-gray-900 rounded-lg overflow-hidden">
+      <img src="C:\Users\alexg\OneDrive\Images\Screenshots\Screenshot 2026-05-04 145241.png" alt="Ebi Tempura Udon" class="w-full aspect-[4/3] object-cover" />
+      <div class="p-4">
+        <h3 class="text-brand-cream font-semibold">Ebi Tempura Udon</h3>
+        <p class="text-brand-orange font-bold mt-1">€16.00</p>
+      </div>
+    </div>
+</main>
+<div style="text-align: center; margin-top: 30px;">
+  <a href="https://www.lieferando.de/en/menu/japan-haus-stuntzstrasse" target="_blank" class="order-btn">
+    Jetzt online bestellen
+  </a>
+</div>
+
+<style>
+.order-btn {
+  display: inline-block;
+  padding: 16px 32px;
+  background: #ff7a00;
+  color: white;
+  border-radius: 8px; 
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.order-btn:hover {
+  background: #e66a00;
+}
+</style>
+
+  <footer class="bg-brand-dark border-t border-gray-800 py-10 px-6 text-center text-sm">
+  <p class="font-semibold text-brand-cream text-base mb-1">JAPAN HAUS Original Japanese Wagyu & Crêperie</p>
+  <p class="text-brand-cream/60">Stuntzstraße 32 · München</p>
+  <p class="text-brand-cream/60">+49 175 8415155</p>
+  <div class="flex justify-center gap-6 mt-4 text-brand-cream/60">
+    <a href="https://www.instagram.com/japan_haus/" class="hover:text-brand-orange transition-colors">Instagram</a>
+    <a href="#" class="hover:text-brand-orange transition-colors"></a>
+  </div>
+  <p class="mt-6 text-brand-cream/40">&copy; 2026 JAPAN HAUS. All rights reserved.</p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
